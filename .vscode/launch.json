@@ -23,6 +23,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Rectangal",
+            "request": "launch",
+            "mainClass": "Rectangal",
+            "projectName": "app.java_66540f03"
+        },
+        {
+            "type": "java",
             "name": "Prectis",
             "request": "launch",
             "mainClass": "Prectis",
@@ -53,7 +60,7 @@
             "type": "java",
             "name": "Launch JavaFX",
             "request": "launch",
-            "mainClass": "Txt",
+            "mainClass": "Rec",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.10/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
