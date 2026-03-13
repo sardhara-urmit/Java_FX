@@ -53,7 +53,7 @@
             "type": "java",
             "name": "Launch JavaFX",
             "request": "launch",
-            "mainClass": "V_Prt",
+            "mainClass": "Txt",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.10/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
