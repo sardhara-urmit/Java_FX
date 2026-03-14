@@ -1,7 +1,7 @@
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.shape.Rectangle; // Sahi import
+import javafx.scene.shape.Rectangle; 
 import javafx.stage.Stage;
 
 public class Rec extends Application {

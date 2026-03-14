@@ -60,7 +60,7 @@
             "type": "java",
             "name": "Launch JavaFX",
             "request": "launch",
-            "mainClass": "Rec",
+            "mainClass": "TestF",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.10/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
