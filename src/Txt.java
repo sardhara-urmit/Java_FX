@@ -17,6 +17,8 @@ public class Txt  extends Application{
         text.setY(100);
         text.setFont(Font.font(60));
         text.setFill(Color.BLUE);
+        text.setStroke(Color.RED);
+        text.setStrokeWidth(2);
 
         Group root=new Group();
         root.getChildren().add(text);
