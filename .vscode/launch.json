@@ -23,6 +23,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Mas",
+            "request": "launch",
+            "mainClass": "Mas",
+            "projectName": "app.java_66540f03"
+        },
+        {
+            "type": "java",
+            "name": "Prs2",
+            "request": "launch",
+            "mainClass": "Prs2",
+            "projectName": "app.java_66540f03"
+        },
+        {
+            "type": "java",
             "name": "Rectangal",
             "request": "launch",
             "mainClass": "Rectangal",
@@ -60,7 +74,7 @@
             "type": "java",
             "name": "Launch JavaFX",
             "request": "launch",
-            "mainClass": "Final",
+            "mainClass": "TestF",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.10/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
