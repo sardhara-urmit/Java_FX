@@ -1,0 +1,50 @@
+import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+public class Te_form extends Application{
+    @Override
+    public void start(Stage arg0) throws Exception {
+        Label lb1=new Label("User Name ");
+        TextField userField=new TextField();
+        Label lb2=new Label("Password");
+        TextField PasswordField=new TextField();
+        Button btn1=new Button("Login");
+       Button btn2=new Button("Reset");
+       Label lb3=new Label();
+
+        btn1.setOnAction(e->{
+            lb3.setText("Login Succesfull");
+        });
+
+       GridPane root=new GridPane();
+    //    root.getChildren().addAll(lb1,userField,lb2,PasswordField,btn1,btn2); 
+
+    root.setHgap(20);
+    root.setVgap(20);
+    root.add(lb1, 0, 0);
+    root.add(userField, 1, 0);
+    root.add(lb2, 0, 1);
+    root.add(PasswordField, 1, 1);
+    root.add(btn1, 0, 2);
+    root.add(btn2, 1, 2);
+    root.add(lb3, 0, 3);
+
+        root.setAlignment(Pos.CENTER);
+        Scene scene=new Scene(root,500,500);
+        arg0.setTitle("login form");
+        arg0.setScene(scene);
+        
+        arg0.show();
+    }
+    
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
