@@ -21,60 +21,11 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "Mas",
-            "request": "launch",
-            "mainClass": "Mas",
-            "projectName": "app.java_66540f03"
-        },
-        {
-            "type": "java",
-            "name": "Prs2",
-            "request": "launch",
-            "mainClass": "Prs2",
-            "projectName": "app.java_66540f03"
-        },
-        {
-            "type": "java",
-            "name": "Rectangal",
-            "request": "launch",
-            "mainClass": "Rectangal",
-            "projectName": "app.java_66540f03"
-        },
-        {
-            "type": "java",
-            "name": "Prectis",
-            "request": "launch",
-            "mainClass": "Prectis",
-            "projectName": "app.java_66540f03"
-        },
-        {
-            "type": "java",
-            "name": "B_flow",
-            "request": "launch",
-            "mainClass": "B_flow",
-            "projectName": "app.java_66540f03"
-        },
-        {
-            "type": "java",
-            "name": "Testbtn",
-            "request": "launch",
-            "mainClass": "Testbtn",
-            "projectName": "app.java_66540f03"
-        },
-        {
-            "type": "java",
-            "name": "btn",
-            "request": "launch",
-            "mainClass": "btn",
-            "projectName": "app.java_66540f03"
-        },
-        {
+               {
             "type": "java",
             "name": "Launch JavaFX",
             "request": "launch",
-            "mainClass": "TestF",
+            "mainClass": "Pro",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.10/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
