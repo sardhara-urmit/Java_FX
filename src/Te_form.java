@@ -20,7 +20,7 @@ public class Te_form extends Application{
        Label lb3=new Label();
 
         btn1.setOnAction(e->{
-            if (userField.getText().equals("") && PasswordField.getText().equals("")) {
+            if (userField.getText().equals("") || PasswordField.getText().equals("")) {
                 lb3.setStyle("-fx-font-size:20px;-fx-text-fill:red");
                 lb3.setText("enter user and pass ");
                 
@@ -34,6 +34,7 @@ public class Te_form extends Application{
         btn2.setOnAction(e->{
             userField.setText("");
             PasswordField.setText("");
+            lb3.setText("");
         });
 
        GridPane root=new GridPane();
