@@ -4,3 +4,5 @@
 
 - this repo is cover only exam topics not cover real world compi...
 
+
+-NOTE:-> first setup java componet properly-
