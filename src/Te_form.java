@@ -3,6 +3,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -13,13 +14,24 @@ public class Te_form extends Application{
         Label lb1=new Label("User Name ");
         TextField userField=new TextField();
         Label lb2=new Label("Password");
-        TextField PasswordField=new TextField();
+        PasswordField PasswordField=new PasswordField();
         Button btn1=new Button("Login");
        Button btn2=new Button("Reset");
        Label lb3=new Label();
 
         btn1.setOnAction(e->{
+            if (userField.getText().equals("") && PasswordField.getText().equals("")) {
+                lb3.setText("enter user and pass ");
+                
+            }
+            else{
             lb3.setText("Login Succesfull");
+            }
+        });
+
+        btn2.setOnAction(e->{
+            userField.setText("");
+            PasswordField.setText("");
         });
 
        GridPane root=new GridPane();
