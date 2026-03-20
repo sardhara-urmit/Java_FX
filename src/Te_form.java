@@ -21,10 +21,12 @@ public class Te_form extends Application{
 
         btn1.setOnAction(e->{
             if (userField.getText().equals("") && PasswordField.getText().equals("")) {
+                lb3.setStyle("-fx-font-size:20px;-fx-text-fill:red");
                 lb3.setText("enter user and pass ");
                 
             }
             else{
+                  lb3.setStyle("-fx-font-size:20px;-fx-text-fill:green");
             lb3.setText("Login Succesfull");
             }
         });
@@ -47,6 +49,14 @@ public class Te_form extends Application{
     root.add(btn2, 1, 2);
     root.add(lb3, 0, 3);
 
+    // add style
+    root.setStyle("-fx-background-color:linear-gradient(to right,red,blue)");
+    lb1.setStyle("-fx-text-fill:yellow; -fx-font-size:20px");
+    lb2.setStyle("-fx-text-fill:yellow;-fx-font-size:20px");
+    btn1.setStyle("-fx-background-color:yellow");
+    btn2.setStyle("-fx-background-color:yellow");
+    
+
         root.setAlignment(Pos.CENTER);
         Scene scene=new Scene(root,500,500);
         arg0.setTitle("login form");
@@ -55,6 +65,8 @@ public class Te_form extends Application{
         arg0.show();
     }
     
+
+
 
     public static void main(String[] args) {
         launch(args);
