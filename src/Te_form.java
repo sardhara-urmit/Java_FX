@@ -48,7 +48,7 @@ public class Te_form extends Application{
     root.add(PasswordField, 1, 1);
     root.add(btn1, 0, 2);
     root.add(btn2, 1, 2);
-    root.add(lb3, 0, 3);
+    root.add(lb3, 0, 3,2,1);
 
     // add style
     root.setStyle("-fx-background-color:linear-gradient(to right,red,blue)");
