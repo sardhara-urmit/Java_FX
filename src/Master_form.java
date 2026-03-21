@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -44,6 +45,12 @@ public class Master_form extends Application{
         root.add(submit, 0, 2);
         root.add(reset, 1, 2);
         root.add(lb3, 0, 3,2,1);
+
+        // add style --------
+
+        root.setAlignment(Pos.CENTER);
+        root.setHgap(20);
+        root.setVgap(20);
 
         Scene scene=new Scene(root,500,500);
         arg0.setScene(scene);
