@@ -23,12 +23,14 @@ public class Master_form extends Application{
 
         submit.setOnAction(e->{
             if (userField.getText().equals("") || pass.getText().equals("")) {
-                
+
+            lb3.setStyle("-fx-text-fill:red;-fx-font-size:20;-fx-background-color:black");
             
             lb3.setText("Fail");
             }
             else{
                 lb3.setText("succses full");
+                lb3.setStyle("-fx-text-fill:green;-fx-font-size:20;-fx-background-color:black");
             }
         });
         reset.setOnAction(e->{
@@ -51,6 +53,13 @@ public class Master_form extends Application{
         root.setAlignment(Pos.CENTER);
         root.setHgap(20);
         root.setVgap(20);
+
+        root.setStyle("-fx-background-color:linear-gradient(to right ,red, blue)");
+        lb1.setStyle("-fx-text-fill:yellow;-fx-font-size:20");
+        lb2.setStyle("-fx-text-fill:yellow;-fx-font-size:20");
+        submit.setStyle("-fx-background-color:linear-gradient(to top , white ,black);-fx-text-fill:yellow;-fx-font-size:15");
+        reset.setStyle("-fx-background-color:linear-gradient(to top , white ,black);-fx-text-fill:yellow;-fx-font-size:15");
+
 
         Scene scene=new Scene(root,500,500);
         arg0.setScene(scene);
