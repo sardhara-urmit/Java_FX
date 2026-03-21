@@ -30,6 +30,11 @@ public class Master_form extends Application{
                 lb3.setText("succses full");
             }
         });
+        reset.setOnAction(e->{
+            userField.setText("");
+            pass.setText("");
+            lb3.setText("");
+        });
 
         GridPane root=new GridPane();
         root.add(lb1, 0, 0);
@@ -38,7 +43,7 @@ public class Master_form extends Application{
         root.add(pass, 1, 1);
         root.add(submit, 0, 2);
         root.add(reset, 1, 2);
-        root.add(lb3, 0, 3);
+        root.add(lb3, 0, 3,2,1);
 
         Scene scene=new Scene(root,500,500);
         arg0.setScene(scene);
