@@ -17,6 +17,19 @@ public class Master_form extends Application{
         PasswordField pass=new PasswordField();
         Button submit=new Button("Subimit");
         Button reset=new Button("reset");
+        Label lb3=new Label();
+
+
+        submit.setOnAction(e->{
+            if (userField.getText().equals("") || pass.getText().equals("")) {
+                
+            
+            lb3.setText("Fail");
+            }
+            else{
+                lb3.setText("succses full");
+            }
+        });
 
         GridPane root=new GridPane();
         root.add(lb1, 0, 0);
@@ -25,6 +38,7 @@ public class Master_form extends Application{
         root.add(pass, 1, 1);
         root.add(submit, 0, 2);
         root.add(reset, 1, 2);
+        root.add(lb3, 0, 3);
 
         Scene scene=new Scene(root,500,500);
         arg0.setScene(scene);
