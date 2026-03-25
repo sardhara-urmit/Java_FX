@@ -6,6 +6,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
@@ -52,6 +53,7 @@ public class Clg_form extends Application{
          ListView<String> sub =new ListView<>();
          // hight 
          sub.setMaxHeight(80);
+         sub.setMaxWidth(200);
 
 
          // this is combobox obj sem 
@@ -80,9 +82,21 @@ public class Clg_form extends Application{
         Label lbarr =new Label("add addres");
         TextArea addrs=new TextArea();
         addrs.setMaxHeight(80);
+        addrs.setMaxWidth(200);
 
+
+
+        //add slider 
+        Label lbSld =new Label("set age ");
+        Slider sdr = new Slider(0,50,18);
+        
+        // sdr.setShowTickMarks(true);
+        // sdr.setShowTickLabels(true);
+         Label sldVal =new Label();
+         
+sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
            
-
+    
 
 
 
@@ -106,14 +120,17 @@ public class Clg_form extends Application{
         root.add(sub, 1, 6);
         root.add(lbarr, 0, 7);
         root.add(addrs, 1, 7);
+        root.add(lbSld, 0, 8);
+        root.add(sdr, 1, 8);
+        root.add(sldVal, 2, 9);
 
  
         // style ----
         root.setAlignment(Pos.CENTER);
         root.setVgap(10);
         root.setHgap(10);
-        root.setStyle("-fx-background-color:linear-gradient(to right ,blue , white)");
-
+        root.setStyle("-fx-background-color:linear-gradient(to right ,blue , white);-fx-font-size:15");
+        
 
 
         Scene scene =new Scene(root,1000,780);
