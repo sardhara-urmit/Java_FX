@@ -1,6 +1,7 @@
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
@@ -19,9 +20,17 @@ public class Clg_form extends Application{
         TextField lname =new TextField();
         RadioButton rd1=new RadioButton("Male");
         RadioButton rd2 =new RadioButton("Female");
+        Label Gender =new Label("Gender");
         ToggleGroup group =new ToggleGroup();
         rd1.setToggleGroup(group);
         rd2.setToggleGroup(group);
+        Label Hobby =new Label("Hobby");
+        CheckBox playGame = new CheckBox("play game");
+        CheckBox Music =new CheckBox("MUsic");
+        CheckBox  Singing =new CheckBox("Singing "); 
+
+
+
 
 
         GridPane root =new GridPane();
@@ -31,9 +40,13 @@ public class Clg_form extends Application{
         root.add(mname,1,1);
         root.add(Lname, 0, 2);
         root.add(lname,1,2);
-        root.add(rd1, 0, 3);
-        root.add(rd2, 1, 3);
-
+        root.add(Gender, 0, 3);
+        root.add(rd1, 1, 3);
+        root.add(rd2, 2, 3);
+        root.add(Hobby, 0, 4);
+        root.add(playGame, 1, 4);
+        root.add(Music, 2, 4);
+        
         
 
 
