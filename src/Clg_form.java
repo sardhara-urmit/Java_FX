@@ -4,7 +4,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
@@ -16,10 +18,13 @@ public class Clg_form extends Application{
         // name fild 
         Label Fname= new Label("Enter name : ");
         TextField fname =new TextField();
+        fname.setPromptText("Enter first name ");
         Label Mname =new Label("Enter middel name :");
         TextField mname =new TextField();
+        mname.setPromptText("Enter mniddal name");
         Label Lname=new Label("Enter Last name :");
         TextField lname =new TextField();
+        lname.setPromptText("Enter last name ");
         //Gender 
         Label Gender =new Label("Gender");
         RadioButton rd1=new RadioButton("Male");
@@ -40,7 +45,43 @@ public class Clg_form extends Application{
 
         Label semStr=new Label("Semester");
         ComboBox<String> sem=new ComboBox<>();
-        sem.getItems().addAll("sem-1","sem-2","sem-3","sem-5","sem-6");
+        sem.getItems().addAll("sem-1","sem-2","sem-3","sem-4");
+
+        // sub using live select sem 
+        Label lbsub =new Label("select sub");
+         ListView<String> sub =new ListView<>();
+         // hight 
+         sub.setMaxHeight(80);
+
+
+         // this is combobox obj sem 
+        sem.setOnAction(e->{
+            sub.getItems().clear();
+            if (sem.getValue().equals("sem-1")) {
+                sub.getItems().addAll("c","html","com");
+                
+            }
+           else if (sem.getValue().equals("sem-2")) {
+            sub.getItems().addAll("grupe-study","dsa in c","php");
+            
+           }
+          else if (sem.getValue().equals("sem-3")) {
+            sub.getItems().addAll("oracle ","c++ ","soft-skill");
+            
+           }
+           else{
+            sub.getItems().addAll("java","c#","seo");
+           }
+        });
+
+       
+        // ardes using text arriya 
+
+        Label lbarr =new Label("add addres");
+        TextArea addrs=new TextArea();
+        addrs.setMaxHeight(80);
+
+           
 
 
 
@@ -61,13 +102,17 @@ public class Clg_form extends Application{
         root.add(Singing, 3, 4);
         root.add(semStr, 0,5);
         root.add(sem, 1, 5);     
+        root.add(lbsub, 0, 6);
+        root.add(sub, 1, 6);
+        root.add(lbarr, 0, 7);
+        root.add(addrs, 1, 7);
 
-
+ 
         // style ----
         root.setAlignment(Pos.CENTER);
         root.setVgap(10);
         root.setHgap(10);
-        root.setStyle("-fx-background-color:linear-gradient(to right ,red , blue)");
+        root.setStyle("-fx-background-color:linear-gradient(to right ,blue , white)");
 
 
 
