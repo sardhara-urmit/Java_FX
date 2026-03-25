@@ -103,10 +103,47 @@ sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
         // condison for validason 
         Label note=new Label();
        submit.setOnAction(e->{
-        if (fname.getText().equals("")|| lname.getText().equals("")|| lname.getText().equals("")) {
+
+        if (fname.getText().equals("")|| mname.getText().equals("")|| 
+         lname.getText().equals("")||
+         group.getSelectedToggle()==null) {
 
             note.setText("note valid ");
             
+        }
+        else if (!Music.isSelected()&& !playGame.isSelected()&&!Singing.isSelected()) {
+            
+             note.setText("note valid ");
+        }
+        else if (sem.getValue()=="") {
+            note.setText("note valid ");
+
+            
+        }
+        else if (addrs.getText().equals("")) {
+              note.setText("note valid ");
+
+
+        }
+        else{
+            // print all dtl..
+            note.setText(
+
+
+
+                "First Name - "+fname.getText()+
+                "\nMidal name - "+mname.getText()+
+                "\nLast name - "+lname.getText()+
+                "\nGender - " +(rd1.isSelected() ? "Male" : "Female")+
+                "\nHobby - "+(playGame.isSelected() ? "playgame" : "")+(Music.isSelected() ? "Music" :"")+(Singing.isSelected() ? "Singing" : "")+
+                "\nSem - "+sem.getValue()+
+                "\nage - "+sdr.getValue()+
+                "\nAdres - "+addrs.getText()
+
+                
+
+
+            );
         }
        });
 
@@ -134,9 +171,9 @@ sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
         root.add(addrs, 1, 7);
         root.add(lbSld, 0, 8);
         root.add(sdr, 1, 8);
-        root.add(sldVal, 2, 9);
+        root.add(sldVal, 1, 9);
         root.add(submit, 1, 10);
-        root.add(note, 2, 11);
+        root.add(note, 1, 11);
 
  
         // style ----

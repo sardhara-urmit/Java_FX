@@ -12,7 +12,9 @@ public class Sld extends Application{
     public void start(Stage arg0) throws Exception {
         Label lb1 =new Label();
         Slider sld=new Slider(0,50,18);
-        lb1.textProperty().bind(sld.valueProperty().asString("%.0f"));
+        // lb1.textProperty().bind(sld.valueProperty().asString("%.0f"));
+        // lb1.setText(""+sld.getValue());
+        lb1.textProperty().bind(sld.valueProperty().asString("%.0f"));;
          
         GridPane root =new GridPane();
         root.add(sld, 0, 1);
