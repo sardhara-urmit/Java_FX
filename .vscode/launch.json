@@ -5,16 +5,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Clg_form",
+            "name": "TestF",
             "request": "launch",
-            "mainClass": "Clg_form",
+            "mainClass": "TestF",
             "projectName": "app.java_66540f03"
         },
+        
         {
             "type": "java",
             "name": "Launch JavaFX",
             "request": "launch",
-            "mainClass": "Sld",
+            "mainClass": "Clg_form",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.10/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]

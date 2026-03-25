@@ -1,6 +1,7 @@
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -95,8 +96,19 @@ public class Clg_form extends Application{
          Label sldVal =new Label();
          
 sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
+  
+        Button submit =new Button("Submit");
            
-    
+
+        // condison for validason 
+        Label note=new Label();
+       submit.setOnAction(e->{
+        if (fname.getText().equals("")|| lname.getText().equals("")|| lname.getText().equals("")) {
+
+            note.setText("note valid ");
+            
+        }
+       });
 
 
 
@@ -123,6 +135,8 @@ sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
         root.add(lbSld, 0, 8);
         root.add(sdr, 1, 8);
         root.add(sldVal, 2, 9);
+        root.add(submit, 1, 10);
+        root.add(note, 2, 11);
 
  
         // style ----
