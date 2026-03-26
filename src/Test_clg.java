@@ -91,6 +91,11 @@ public class Test_clg extends Application{
         root.setHgap(20);
         root.setVgap(20);
 
+        lsw.setMaxHeight(80);
+
+
+
+
         Scene scene =new Scene(root,700,700);
         arg0.setScene(scene);
         arg0.setTitle("login ");
