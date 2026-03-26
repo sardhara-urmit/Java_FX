@@ -36,14 +36,22 @@ public class Test_clg extends Application{
 
         ComboBox<String> sem =new ComboBox<>();
         
-        sem.getItems().addAll("sem-1 ","sem-2","sem-4");
+        sem.getItems().addAll("sem-1","sem-2","sem-4");
 
         // list view
 
         ListView<String> lsw =new ListView<>();
+ 
 
+        sem.setOnAction(e->{
 
-
+            if (sem.getValue().equals("sem-1")) {
+                lsw.getItems().addAll("this is ","jasjflkaj");
+                
+            }
+            
+            
+        });
 
 
 
@@ -72,6 +80,7 @@ public class Test_clg extends Application{
         root.add(music, 0, 2);
         root.add(dance, 1, 2);
         root.add(sem, 0, 3);
+        root.add(lsw, 0, 4);
         root.add(submit, 0, 10);
         root.add(NOte, 1, 11);
 
