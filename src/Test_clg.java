@@ -92,7 +92,7 @@ public class Test_clg extends Application{
         root.setVgap(20);
 
         lsw.setMaxHeight(80);
-        root.setStyle("-fx-background-color:linear-gradient(to right ,red,blue);-fx-text-fill:white;-fx-font-size:20px");
+        root.setStyle("-fx-background-color:linear-gradient(to right ,red,blue);-fx-font-size:20px");
 
 
 
