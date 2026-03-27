@@ -80,7 +80,7 @@ public class Test_clg extends Application{
         root.add(music, 0, 2);
         root.add(dance, 1, 2);
         root.add(sem, 0, 3);
-        root.add(lsw, 0, 4);
+        root.add(lsw, 1, 4);
         root.add(submit, 0, 10);
         root.add(NOte, 1, 11);
 
@@ -92,6 +92,7 @@ public class Test_clg extends Application{
         root.setVgap(20);
 
         lsw.setMaxHeight(80);
+        root.setStyle("-fx-background-color:linear-gradient(to right ,red,blue)");
 
 
 
