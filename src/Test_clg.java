@@ -54,7 +54,8 @@ public class Test_clg extends Application{
                 lsw.getItems().addAll("sem 2 ","syb","exy z ");
                 
             }
-            else if () {
+            else if (sem.getValue().equals("sem-3")) {
+                lsw.getItems().addAll("sem-3","this is ","king");
                 
             }
             
