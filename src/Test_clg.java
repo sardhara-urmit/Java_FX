@@ -44,12 +44,19 @@ public class Test_clg extends Application{
  
 
         sem.setOnAction(e->{
+            lsw.getItems().clear();
 
             if (sem.getValue().equals("sem-1")) {
                 lsw.getItems().addAll("this is ","jasjflkaj");
                 
             }
-            
+            else if (sem.getValue().equals("sem-2")) {
+                lsw.getItems().addAll("sem 2 ","syb","exy z ");
+                
+            }
+            else if () {
+                
+            }
             
         });
 

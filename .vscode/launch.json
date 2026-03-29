@@ -3,7 +3,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "Lable",
+            "request": "launch",
+            "mainClass": "Lable",
+            "projectName": "app.java_66540f03"
+        },
         {
             "type": "java",
             "name": "Launch JavaFX",
