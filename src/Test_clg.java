@@ -8,6 +8,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
@@ -61,8 +62,12 @@ public class Test_clg extends Application{
             
         });
 
-
-
+    
+    // slider for age  
+    Label sld= new Label();
+    Slider age =new Slider(0,50,18);
+  
+    sld.textProperty().bind(age.valueProperty().asString("%.0f"));
 
         Button submit =new Button("Submit");
 
@@ -89,6 +94,8 @@ public class Test_clg extends Application{
         root.add(dance, 1, 2);
         root.add(sem, 0, 3);
         root.add(lsw, 1, 4);
+        root.add(sld, 0, 5);
+        root.add(age, 0, 6);
         root.add(submit, 0, 10);
         root.add(NOte, 1, 11);
 
@@ -99,6 +106,8 @@ public class Test_clg extends Application{
         root.setHgap(20);
         root.setVgap(20);
 
+
+        
         lsw.setMaxHeight(80);
         root.setStyle("-fx-background-color:linear-gradient(to right ,red,blue);-fx-font-size:20px");
 
