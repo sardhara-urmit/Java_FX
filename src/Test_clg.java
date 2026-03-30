@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
@@ -37,7 +38,7 @@ public class Test_clg extends Application{
 
         ComboBox<String> sem =new ComboBox<>();
         
-        sem.getItems().addAll("sem-1","sem-2","sem-4");
+        sem.getItems().addAll("sem-1","sem-2","sem-3");
 
         // list view
 
@@ -69,9 +70,20 @@ public class Test_clg extends Application{
   
     sld.textProperty().bind(age.valueProperty().asString("%.0f"));
 
+
+ // text area 
+   TextArea info =new TextArea();
+   info.setMaxHeight(80);
+   info.setMaxWidth(300);
+
+
+
         Button submit =new Button("Submit");
 
         Label NOte =new Label();
+
+
+       
 
         // if  
         submit.setOnAction(e->{
@@ -100,9 +112,10 @@ public class Test_clg extends Application{
         root.add(music, 0, 2);
         root.add(dance, 1, 2);
         root.add(sem, 0, 3);
-        root.add(lsw, 1, 4);
+        root.add(lsw, 0, 4);
         root.add(sld, 0, 5);
         root.add(age, 0, 6);
+        root.add(info, 0, 7);
         root.add(submit, 0, 10);
         root.add(NOte, 1, 11);
 
