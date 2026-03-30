@@ -86,6 +86,10 @@ public class Test_clg extends Application{
                  NOte.setText("envilad");
                 
             }
+            else if (!music.isSelected() && !dance.isSelected()) {
+                
+                 NOte.setText("envilad");
+            }
         });
 
         GridPane root =new GridPane();
