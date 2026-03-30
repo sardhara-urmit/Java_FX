@@ -109,7 +109,8 @@ public class Test_clg extends Application{
 
         
         lsw.setMaxHeight(80);
-        root.setStyle("-fx-background-color:linear-gradient(to right ,red,blue);-fx-font-size:20px");
+        root.setStyle("-fx-background-color:linear-gradient(to right ,red,blue);-fx-font-size:20px;");
+        sld.setStyle("-fx-text-fill:white");
 
 
 
