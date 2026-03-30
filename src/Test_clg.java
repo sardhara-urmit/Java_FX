@@ -80,9 +80,12 @@ public class Test_clg extends Application{
             if (name.getText().equals("")) {
                 
                 NOte.setText("envilad");
+           
+            }
+             else if (group.getSelectedToggle()==null) {
+                 NOte.setText("envilad");
                 
             }
-            
         });
 
         GridPane root =new GridPane();
@@ -120,7 +123,7 @@ public class Test_clg extends Application{
         arg0.setTitle("login ");
 
         arg0.show();
-    }
+    } 
     
 
     public static void main(String[] args) {
