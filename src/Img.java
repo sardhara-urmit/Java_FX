@@ -15,7 +15,7 @@ public class Img extends Application{
     public void start(Stage arg0) throws Exception {
 
 
-        Image img =new Image(new FileInputStream("src\\imgs/img.jpg"));
+        Image img =new Image(new FileInputStream("src\\Mda/img.jpg"));
         ImageView imageView =new ImageView(img);
 
 
