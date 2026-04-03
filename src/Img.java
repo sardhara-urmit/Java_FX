@@ -1,6 +1,6 @@
 import java.io.FileInputStream;
 
-import javax.imageio.stream.ImageInputStream;
+// import javax.imageio.stream.ImageInputStream;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
