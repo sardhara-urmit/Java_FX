@@ -196,3 +196,4 @@ sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
     }
 }
 // this form is done for all exams 
+// All program are like practis with me 
