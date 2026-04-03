@@ -195,3 +195,4 @@ sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
         launch(args);
     }
 }
+// this form is done for all exams 
