@@ -7,6 +7,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ScrollBar;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -183,8 +185,13 @@ sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
         root.setStyle("-fx-background-color:linear-gradient(to right ,blue , white);-fx-font-size:15");
         
 
+        // add scroll bar  
+       ScrollPane scrollPane =new ScrollPane();
+       scrollPane.setContent(root);
+       scrollPane.setFitToWidth(true);
+        Scene scene =new Scene(scrollPane,1000,780);
 
-        Scene scene =new Scene(root,1000,780);
+
         arg0.setScene(scene);
        arg0.setTitle("Register");
         arg0.show();
@@ -195,5 +202,5 @@ sldVal.textProperty().bind(sdr.valueProperty().asString("%.0f"));
         launch(args);
     }
 }
-// this form is done for all exams 
-// All program are like practis with me 
+
+// all done 
