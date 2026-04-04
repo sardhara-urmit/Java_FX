@@ -11,41 +11,36 @@ public class Btn_name_img extends Application{
      public void start(Stage arg0) throws Exception {
         
         Image img =new Image("file:src/Mda/img.jpg");
-        ImageView imageView =new ImageView(img);
         Button btn =new Button("me with tommy");
+
 
         // secong img 
         Image img2 =new Image("file:src/Mda/black.jpg");
-        ImageView imageView2 =new ImageView(img2);
          Button btn2 =new Button("balck");
 
-
+        // img frame
+           ImageView imageView =new ImageView();
+             imageView.setFitHeight(300);
+             imageView.setFitWidth(250);
 
 
         // layout
         GridPane root =new GridPane();
-        root.add(btn, 0, 0);
-        root.add(btn2, 0, 1);
-
-
-
-        // style 
-        imageView.setFitHeight(300);
-        imageView.setFitWidth(250);
-        imageView2.setFitHeight(300);
-        imageView2.setFitWidth(250);
-
+       root.add(btn, 0, 0);
+    root.add(btn2, 0, 1);
+    root.add(imageView, 1, 1);
 
         // action 
 
         btn.setOnAction(e->{
-            root.add(imageView, 1, 1);
+          imageView.setImage(img);
 
         });
 
 
         btn2.setOnAction(e->{
-            root.add(imageView2, 2, 1);
+            
+            imageView.setImage(img2);
         });
 
 
