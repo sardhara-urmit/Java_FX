@@ -1,6 +1,7 @@
 
 
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -72,6 +73,11 @@ public class Prec_From extends Application{
       root.add(comboBox, 0, 5);
       root.add(listView, 0, 6);
       root.add(submit, 0, 9);
+
+
+      //add style
+      root.setAlignment(Pos.CENTER);
+      root.setStyle("-fx-background-color:powderblue");
 
       Scene scene =new Scene(root,500,500);
       arg0.setScene(scene);
