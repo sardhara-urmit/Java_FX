@@ -33,7 +33,7 @@ public class Prec_From extends Application{
 
     // combo box
     ComboBox<String> comboBox =new ComboBox<>();
-    comboBox.getItems().addAll("sem-1","sem-2","sem3");
+    comboBox.getItems().addAll("sem-1","sem-2","sem-3");
 
     // list view
     ListView<String> listView =new ListView<>();
@@ -41,9 +41,20 @@ public class Prec_From extends Application{
     
     //sub vali
    comboBox.setOnAction(e->{
+    listView.getItems().clear();
     if (comboBox.getValue().equals("sem-1")) {
 
         listView.getItems().addAll("hrmlt","css","js");
+    }
+    
+    else if (comboBox.getValue().equals("sem-2")) {
+        listView.getItems().addAll("sem2 ","sem2 ","sem2");
+
+        
+    }
+    else if (comboBox.getValue().equals("sem-3")) {
+        listView.getItems().addAll("sme 3 ","sem3","sem 3");
+        
     }
 
    });
@@ -55,12 +66,12 @@ public class Prec_From extends Application{
       GridPane root =new GridPane();
       root.add(user, 0, 0);
       root.add(Pass, 0, 1);
-      root.add(submit, 0, 2);
       root.add(note, 0, 10);
       root.add(Male, 0, 4);
       root.add(Female, 1, 4);
       root.add(comboBox, 0, 5);
       root.add(listView, 0, 6);
+      root.add(submit, 0, 9);
 
       Scene scene =new Scene(root,500,500);
       arg0.setScene(scene);
