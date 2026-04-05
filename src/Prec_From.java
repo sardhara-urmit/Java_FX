@@ -1,7 +1,12 @@
+
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -13,21 +18,34 @@ public class Prec_From extends Application{
 
       TextField Pass =new TextField();
       Pass.setPromptText("enter pass ");
+      RadioButton Male=new RadioButton("Male");
+      RadioButton Female =new RadioButton("Female");
+      ToggleGroup group =new ToggleGroup();
+    Male.setToggleGroup(group);
+    Female.setToggleGroup(group);
+
 
       Button submit =new Button("submit");
+      Label note =new Label();
 
 
       GridPane root =new GridPane();
       root.add(user, 0, 0);
       root.add(Pass, 0, 1);
       root.add(submit, 0, 2);
+      root.add(note, 0, 10);
+      root.add(Male, 0, 4);
+      root.add(Female, 1, 4);
 
       Scene scene =new Scene(root,500,500);
       arg0.setScene(scene);
  
     // show 
-    
+    submit.setOnAction(e->{
+        note.setText(user.getText()+"\n"+Pass.getText()+"\n"+(Male.isSelected()?"Male":"Female"));
 
+
+    });
 
 
     arg0.show();
